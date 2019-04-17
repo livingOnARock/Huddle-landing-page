@@ -1,0 +1,324 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    position: relative;
+    width: 60%;
+    margin: auto;
+    overflow: hidden;
+    background-color: #f6f9fe;
+    z-index: -5;
+}
+header{
+    width: 100%;
+    height: 100px;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.huddle{
+    display: inline-flex;
+    margin: 0 30px;
+    padding: 20px;
+    font-family: Helvetica;
+    font-weight: 700;
+}
+
+header button{
+    width: 150px;
+    background-color: white;
+    padding: 10px 20px;
+    margin-right: 40px;
+}
+header button span{
+    color: rgb(149, 68, 255);
+}
+.topDiv{
+    height: 55rem;
+    width: 100%;
+}
+
+.gradientDiv{
+    position: absolute;
+    right: -36rem;
+    top: -29rem;
+    z-index: -1;
+    width: 65rem;
+    height: 65rem;
+    background-image: linear-gradient(rgb(253, 60, 227), rgb(149, 68, 255));
+    border-radius: 90px;
+    -webkit-transform: rotate(-40deg); /* Safari and Chrome */
+    -moz-transform: rotate(-40deg);   /* Firefox */
+    -ms-transform: rotate(-40deg);   /* IE 9 */
+    -o-transform: rotate(-40deg);   /* Opera */
+    transform: rotate(-40deg);
+}
+#whiteBackgroundDiv{
+    right: -0rem;
+    top: 12rem;
+    position: absolute;
+    width: 62rem;
+    height: 42rem;
+    z-index: -2;
+    border-radius: 70px;
+    background-color: white;
+    -webkit-transform: rotate(-30deg); /* Safari and Chrome */
+    -moz-transform: rotate(-30deg);   /* Firefox */
+    -ms-transform: rotate(-30deg);   /* IE 9 */
+    -o-transform: rotate(-30deg);   /* Opera */
+    transform: rotate(-30deg);
+}
+.img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.img img{
+    width: 36rem;
+    height: 24rem;
+    margin-top: 4rem;
+}
+.info{
+    width: 55%;
+    margin: 50px auto;
+    font-family: Helvetica;
+    text-align: center;
+}
+.info h3{
+    margin-bottom: 30px;
+    font-size: x-large;
+    font-weight: bolder;
+}
+.info p{
+    color: grey;
+}
+.pinkButton{
+    background-color: #f453c7;
+    padding: 15px 20px;
+    color: white;
+    margin-top: 20px;
+    border-radius: 1px;
+    font-size: x-small;
+    width: 200px;
+    border: none;
+}
+.teamwork{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 15rem;
+    padding: 0 2rem;
+
+}
+.teamworkImg{
+    width: 50%;
+    height: 100%;
+    display: flex; 
+    justify-content: center;
+}
+.teamworkImg img{
+    max-width: 90%;
+    max-height: 90%;
+    margin: auto;
+
+}
+.teamworkInfo{
+    width: 50%;
+    height: 100%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+.innerInfo{
+    margin-top: 25px;
+}
+.innerInfo h3 {
+    margin: 10px 0;
+    font-size: x-large;
+}
+.innerInfo p {
+    margin-bottom: 10px;
+    color: grey;
+}
+.trial{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.trialWrapper{
+    width: 55%;
+    margin: 10rem auto;
+    text-align: center;
+    padding: 60px 60px 100px 60px; 
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px 10px rgb(232, 239, 255);
+}  
+.trialWrapper h2{
+    font-size: xx-large;
+    
+}
+
+.trialWrapper p {
+    color: grey;
+    font-size: larger;
+    margin: 10px 0;
+}
+footer{
+    width: 100%;
+    margin: auto;
+    background-color: #00262e;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px;
+    color: white;
+}
+.footerwide{
+    width: 30%;
+    height: 100%;
+    padding: 20px;
+    line-height: 1.7;
+
+}
+.footerNarrow{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.footerNarrow li{
+    list-style-type: none;
+    line-height: 1.8;
+}
+.footerwide h2{
+    font-size: xx-large;
+    text-align: center;
+    margin-bottom: 10px;
+}
+footer a {
+    font-size: xx-large;
+    color: white;
+    margin: 20px;
+}
+.footerwide p{
+    margin-top: 20px;
+}
+
+#subscribeBtn{
+    display: flex;
+    width: 150px;
+    margin: 10px auto;
+    align-self: flex-end;
+    text-align: center;
+}
+.footerwide input{
+    width: 100%;
+    height: 40px;
+}
+@media only screen and (max-width: 600px) {
+    *{
+        box-sizing: border-box;
+    }
+    .container {
+        width: 100%;
+        padding: 5px;
+    }
+    header{
+        display: inline-flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .huddle{
+        margin-left: 20px;
+        padding: 0;
+    }
+    header button{
+        width: 100px;
+        padding: 10px 10px;
+        margin-right: 20px;
+        font-size: small;
+    }
+    .topDiv{
+        height: 55rem;
+        width: 100%;
+    }
+    .gradientDiv{
+        position: absolute;
+        right: -60rem;
+        top: -16rem;
+        z-index: -1;
+        -webkit-transform: rotate(-26deg); /* Safari and Chrome */
+        -moz-transform: rotate(-26deg);   /* Firefox */
+        -ms-transform: rotate(-26deg);   /* IE 9 */
+        -o-transform: rotate(-26deg);   /* Opera */
+        transform: rotate(-26deg);
+    }
+    #whiteBackgroundDiv{
+        right: -33rem;
+        top: 11rem;
+        height: 32rem;
+        -webkit-transform: rotate(-26deg); /* Safari and Chrome */
+        -moz-transform: rotate(-26deg);   /* Firefox */
+        -ms-transform: rotate(-26deg);   /* IE 9 */
+        -o-transform: rotate(-26deg);   /* Opera */
+        transform: rotate(-26deg);
+    }
+    .img{
+        width: 80%;
+        margin: auto;
+        height: 20rem;
+    }
+    .img img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .teamwork{
+        flex-direction: column;
+        text-align: center;
+    }
+    .teamworkImg{
+        width: 100%;
+        height: 250px;
+        margin: 10px auto;
+        padding: 0;
+        margin-top: 0;
+
+    }
+    .teamworkInfo{
+        width: 100%;
+        flex-direction: column;
+    }
+    .trial{
+        width: 100%;
+        margin-top: 10rem;
+
+    }
+    .trialWrapper{
+        width: 90%;
+        margin: auto;
+    }
+    footer{
+        margin: 10rem 0;
+        padding: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .socialMedia {
+        display: inline-flex;
+        flex-direction: row;
+        margin: auto;
+        
+    }
+    .footerwide{
+        width: 100%;
+    }
+
+  }
